@@ -49,7 +49,7 @@ Simple... now, let’s put this string in a variable.
 
 ```js
 var hello = "Hello from Node JS Variable!"
-`console.log(hello)`
+` console.log(hello) `
 ```
 
 And run it
