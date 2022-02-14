@@ -36,7 +36,7 @@ While Node is a web language, it is also capable of many server-side operations 
 Create a Node folder in your IT3038C-scripts direcotry and create a new file called test.js.
 Add the following code
 
-console.log("Hello, World")
+` console.log("Hello, World") `
 
 Save it and run it using 
 ```sh
