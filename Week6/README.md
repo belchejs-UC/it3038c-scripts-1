@@ -302,6 +302,7 @@ Any other request should return a 404 error, using the req.url variable we defin
 
 ```js
 var http = require("http");
+var fs = require("fs");
 
 http.createServer(function(req, res){
 
