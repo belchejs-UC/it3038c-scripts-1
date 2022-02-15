@@ -88,7 +88,7 @@ The require method tells our code to import this module. Now we can use â€œpathâ
 console.log("Using PATH module:");
 console.log(`Hello from file ${path.basename(__filename)}`);
 ```
-If you command out the path module using //  you will see that the script will throw an error: 
+If you comment out the path module using //  you will see that the script will throw an error: 
 ReferenceError: path is not defined
 
 Now, similar to Python, we can pass arguments to our scripts and handle it in our code. 
