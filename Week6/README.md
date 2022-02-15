@@ -250,7 +250,7 @@ server.listen(3000)
 console.log("Server listening on port 3000")
 ```
 
-This makes it easy to include information in our responses. We can modify this a bit to make it a little more usable, by changing the res.end to use a body variable and setting the body variable to our content. We can also chain our listen(3000) function to the end of our web server. 
+We can also chain our listen(3000) function to the end of our web server. 
 ```js
 var http = require("http");
 
