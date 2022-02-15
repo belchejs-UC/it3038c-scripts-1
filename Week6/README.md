@@ -402,6 +402,5 @@ LAB 6
 -	Server time is returned in seconds. How many seconds are in a day? Subtract as many days as you can. Now subtract at many hours as you can. Now subtract as many minutes as you can... Etc… 
 -	Google is your friend. If you’re stuck, you can typically find how to get these outputs via Google. 
 
-Here is a sample page: 
-![](/screenshots/21-09-28-13-20-59.png)
+
 
