@@ -27,7 +27,7 @@ Launch PowerShell ISE on your Windows machine.
 Open the sysinfo.ps1 file we worked on a few weeks back. If this script isn’t available, you can copy it from https://github.com/uc-botheaj/it3038c-scripts/blob/main/powershell/sysinfo.ps1  
 
  
-USEFUL DEBUG SHORTCUTS
+##USEFUL DEBUG SHORTCUTS
 
 Toggle Breakpoint	F9	
 
@@ -53,6 +53,8 @@ Go to Console Pane	Ctrl + D
 
 Go to Script Pane	Ctrl + I	
  
+
+##Breakpoint test
 
 In ISE, right-click on the first line and select “Toggle BreakPoint” 
 
