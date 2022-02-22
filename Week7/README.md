@@ -58,13 +58,13 @@ Go to Script Pane	Ctrl + I
 
 In ISE, right-click on the first line and select “Toggle BreakPoint” 
 
-Select “Run Script” 
+Select “Run Script” or f5 
 
 You should see right away that the breakpoint was hit. Now, using the Debug drop-down menu, we can slowly step through this program.  
 
-Notice how many steps the assignment of $IP is. Using ‘Step-in;, the debugger will step through every step that PowerShell takes to calculate this value.  
+Notice how many steps the assignment of $IP is. Using 'Step-in' (f11), the debugger will step through every step that PowerShell takes to calculate this value.  
 
-We can use “Step-out” to skip the rest of this particular step and move on to the next step.  
+We can use “Step-out” (shift + f11) to skip the rest of this particular step and move on to the next step.  
 
 If we hover over $IP, we’ll see the value of that variable. This can be very useful when working with a script that has several variables.  
 
@@ -120,13 +120,13 @@ Now open `C:\logs\rando.log` and view the results of the file. You may have to c
 
  
 
- 
+## LOG script
 
 Let’s stick to PowerShell a little longer. Debugging is something that comes with time, so to understand it, it’s best just to use it when the time arises and learn from that.  
 
  
 
-Let’s write a PowerShell script that will give us some performance data about our Windows machine. The Windows performance monitoring framework is known as Performance Logging and Alerting (PLA). PLA is built into Windows and uses COM and DCOM to obtain performance and diagnosis information from both local and remote computers.  You can see PLA in action by opening the 
+Let’s write a log.ps1 script that will give us some performance data about our Windows machine. The Windows performance monitoring framework is known as Performance Logging and Alerting (PLA). PLA is built into Windows and uses COM and DCOM to obtain performance and diagnosis information from both local and remote computers.  You can see PLA in action by opening the 
 
 Task Manager | More Details | Performance | Open Resource Monitor.  
 
