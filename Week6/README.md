@@ -36,7 +36,7 @@ While Node is a web language, it is also capable of many server-side operations 
 Create a Node folder in your IT3038C-scripts direcotry and create a new file called test.js.
 Add the following code
 
-`console.log("Hello, World")`
+` console.log("Hello, World") `
 
 Save it and run it using 
 ```sh
@@ -49,7 +49,7 @@ Simple... now, let’s put this string in a variable.
 
 ```js
 var hello = "Hello from Node JS Variable!"
-`console.log(hello)`
+console.log(hello) 
 ```
 
 And run it
@@ -88,7 +88,7 @@ The require method tells our code to import this module. Now we can use “path�
 console.log("Using PATH module:");
 console.log(`Hello from file ${path.basename(__filename)}`);
 ```
-If you command out the path module using //  you will see that the script will throw an error: 
+If you comment out the path module using //  you will see that the script will throw an error: 
 ReferenceError: path is not defined
 
 Now, similar to Python, we can pass arguments to our scripts and handle it in our code. 
@@ -250,7 +250,7 @@ server.listen(3000)
 console.log("Server listening on port 3000")
 ```
 
-This makes it easy to include information in our responses. We can modify this a bit to make it a little more usable, by changing the res.end to use a body variable and setting the body variable to our content. We can also chain our listen(3000) function to the end of our web server. 
+We can also chain our listen(3000) function to the end of our web server. 
 ```js
 var http = require("http");
 
@@ -302,6 +302,7 @@ Any other request should return a 404 error, using the req.url variable we defin
 
 ```js
 var http = require("http");
+var fs = require("fs");
 
 http.createServer(function(req, res){
 
@@ -401,6 +402,5 @@ LAB 6
 -	Server time is returned in seconds. How many seconds are in a day? Subtract as many days as you can. Now subtract at many hours as you can. Now subtract as many minutes as you can... Etc… 
 -	Google is your friend. If you’re stuck, you can typically find how to get these outputs via Google. 
 
-Here is a sample page: 
-![](/screenshots/21-09-28-13-20-59.png)
+
 
