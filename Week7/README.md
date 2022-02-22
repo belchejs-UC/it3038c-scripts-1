@@ -28,17 +28,29 @@ Open the sysinfo.ps1 file we worked on a few weeks back. If this script isn’t 
 
  
 USEFUL DEBUG SHORTCUTS
+
 Toggle Breakpoint	F9	
+
 Run/Continue	F5	Type C and then press ENTER to continue debugging
+
 Step Into	F11	Type S and then press ENTER to continue debugging
+
 Step Over	F10	Type V and then press ENTER to continue debugging
+
 Step Out	Shift + F11	Type O and then press ENTER to continue debugging
+
 Stop Debugger	Shift + F5	Type Q and then press ENTER to continue debugging
+
 Remove All Breakpoints	Ctrl + Shift + F9	
+
 List Breakpoints	Ctrl + Shift + L	
+
 Display Call Stack	Ctrl + Shift + D	Type K and then press ENTER to continue debugging
+
 Break All	Ctrl + B	
+
 Go to Console Pane	Ctrl + D	
+
 Go to Script Pane	Ctrl + I	
  
 
