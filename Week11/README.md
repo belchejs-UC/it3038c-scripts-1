@@ -289,7 +289,7 @@ Your widgets.json file needs to get sent to Heroku and you need to point to it w
 
 ## Code based on ENV 
 
-Knowing that we have the ability to check for our environment variable, we can make accommodations in our code. Right after we send our first response, we can add a bit more code to check for our ENV and change our output. Modify your app.get code to look something like this:  
+Knowing that we have the ability to check for our environment variable, we can make accommodations in our code. Right after we send our first response, we can add a bit more code to check for our ENV and change our output. Modify your app.get in index.js code to look something like this:  
 
 ```javascript
 app.get('/env', function(request, response) { 
