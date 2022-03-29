@@ -159,44 +159,6 @@ It should look something like this:
 ![image](https://user-images.githubusercontent.com/97567564/160643770-fa7019df-a698-4dcf-adc5-e3fdec374513.png)
 
  
-## Code based on ENV 
-
-Knowing that we have the ability to check for our environment variable, we can make accommodations in our code. Right after we send our first response, we can add a bit more code to check for our ENV and change our output. Modify your app.get code to look something like this:  
-
-```javascript
-app.get('/env', function(request, response) { 
-
-  if (config.util.getEnv("NODE_ENV") === "Testing") { 
-
-    response.send('<b>You are working in the <em>TEST</em> environment.</b>') 
-
-  } 
-
-  else if (config.util.getEnv("NODE_ENV") === "Heroku Test") { 
-
-    response.send('<b>You are working in the <em>TEST</em> environment that is in Heroku.</b>') 
-
-  } 
-
-  else if (config.util.getEnv("NODE_ENV") === "Production") { 
-
-    response.send('<b>You are working in Production</b>') 
-
-  } 
-
-  else { 
-
-    response.send('<b>Environment is unknown</b>') 
-
-  } 
-
-}) 
-
-```
-
- 
-
-Restart the application and browse to it. Include `/env` at the end http://localhost:5001/env  
 
 
 ## Create a Heroku app 
@@ -323,4 +285,43 @@ Using the example for checking /env, you can create another route for /api. Don�
 
 Refer to last week’s NodeJS code. You’ll need the file, the data and a response.  
 
-Your widgets.json file needs to get sent to Heroku and you need to point to it without knowing the full path. A relative path should do (eg. ./public/widgets.json) 
+Your widgets.json file needs to get sent to Heroku and you need to point to it without knowing the full path. A relative path should do (eg. ./public/widgets.json)
+
+## Code based on ENV 
+
+Knowing that we have the ability to check for our environment variable, we can make accommodations in our code. Right after we send our first response, we can add a bit more code to check for our ENV and change our output. Modify your app.get code to look something like this:  
+
+```javascript
+app.get('/env', function(request, response) { 
+
+  if (config.util.getEnv("NODE_ENV") === "Testing") { 
+
+    response.send('<b>You are working in the <em>TEST</em> environment.</b>') 
+
+  } 
+
+  else if (config.util.getEnv("NODE_ENV") === "Heroku Test") { 
+
+    response.send('<b>You are working in the <em>TEST</em> environment that is in Heroku.</b>') 
+
+  } 
+
+  else if (config.util.getEnv("NODE_ENV") === "Production") { 
+
+    response.send('<b>You are working in Production</b>') 
+
+  } 
+
+  else { 
+
+    response.send('<b>Environment is unknown</b>') 
+
+  } 
+
+}) 
+
+```
+
+ 
+
+Restart the application and browse to it. Include `/env` at the end http://localhost:5001/env  
