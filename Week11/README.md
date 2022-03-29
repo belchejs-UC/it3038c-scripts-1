@@ -163,8 +163,6 @@ It should look something like this:
 
 ## Create a Heroku app 
 
-I reccomend working in a clean Heroku repo: `git clone https://github.com/heroku/node-js-sample.git`
-
 To create an app in Heroku, login to the web interface at https://dashboard.heroku.com/apps  
 
 From the dashboard, click New | Create New App.  
