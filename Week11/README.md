@@ -117,7 +117,7 @@ node index
 Browse to http://localhost:5000 in your browser 
 
 You should see something like this:  
-![](/screenshots/21-11-03-07-13-15.png)
+![image](https://user-images.githubusercontent.com/97567564/160643802-7c0ef098-7f61-4323-acae-9d2cc32cfd43.png)
  
 
  
@@ -156,7 +156,7 @@ Launch your web browser to http://localhost:5001 and confirm the app is working 
 It should look something like this:  
 
  
- ![](/screenshots/21-11-03-07-15-58.png)
+![image](https://user-images.githubusercontent.com/97567564/160643770-fa7019df-a698-4dcf-adc5-e3fdec374513.png)
 
  
 ## Code based on ENV 
@@ -200,6 +200,8 @@ Restart the application and browse to it. Include `/env` at the end http://local
 
 
 ## Create a Heroku app 
+
+I reccomend working in a clean Heroku repo: `git clone https://github.com/heroku/node-js-sample.git`
 
 To create an app in Heroku, login to the web interface at https://dashboard.heroku.com/apps  
 
@@ -293,16 +295,19 @@ Create a `NODE_ENV` value and set it to `HerokuTest`
 Also create our `MYNAME` variable and set it to your username. It should look something like this.  
 
  
-![](/screenshots/21-11-03-06-59-24.png)
+![image](https://user-images.githubusercontent.com/97567564/160643693-2846e1e4-dd04-4858-8d53-006009f27ed0.png)
  
 
 Reopen the application and verify it looks similar to this.   
 
-![](/screenshots/21-11-03-06-59-38.png)
+![image](https://user-images.githubusercontent.com/97567564/160643615-2f024893-3014-4f33-a1d4-d9ea227263be.png)
+
 
  
 
-Lab 10 
+Lab 10 -- 5 bonus points
+
+All that is due for the actual portion of Lab 10 is a running Heroku app like we demo'd in class, below is further integration with last weeks lab and code based on ENVS.
 
 Using the code you wrote for Lab 9, create a new route at /api that includes the content of the file widgets.json we used last week. Submit the URL of your Heroku app that returns the contents of widgets.json at /api  
 
@@ -311,6 +316,8 @@ Your final page should look like this example, including your correct username, 
 https://botheaj-test-pre-class-492019.herokuapp.com/ 
 
 Here are a few hints:  
+
+Checkout the Code based on ENVs section and modify that to work with your heroku build.
 
 Using the example for checking /env, you can create another route for /api. Don’t over think it.  
 
